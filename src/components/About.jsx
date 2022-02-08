@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about" id="about">
 
             <div className="about-header-cont">
                 <h2 className="about-header">Hola! Soy Kassandra Romanillo🥰, <br />arquitecto, diseñadora <br />y decoradora de interiores.  🏘️</h2>

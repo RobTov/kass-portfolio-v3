@@ -30,4 +30,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-
+.intro, .contact, .about, .projects {
+    scroll-behavior: smooth;
+}

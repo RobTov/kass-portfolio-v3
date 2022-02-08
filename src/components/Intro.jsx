@@ -10,7 +10,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 const Intro = () => {
     return (
         <>
-        <div className="intro">
+        <div className="intro" id="home">
             <div className="left-side">
                 <h1 className="intro-title text-gradient">Kassandra Romanillo</h1>
                 <div className="i-title">
@@ -32,10 +32,11 @@ const Intro = () => {
         </div>
         <div className="bottom-nav-bar">
             <div className="nav-bar-container">
-                <Link className="nav-item" to="/"><AiOutlineHome /></Link>
-                <Link className="nav-item" to="about"><MdPersonOutline/></Link>
-                <Link className="nav-item" to="projects"><BiShoppingBag/></Link>
-                <Link className="nav-item" to="contact"><AiOutlineMail/></Link>
+                <a className="nav-item" href="/#home"><AiOutlineHome /></a>
+                <a className="nav-item" href="/#about"><MdPersonOutline/></a>
+                <a className="nav-item" href="/#projects"><BiShoppingBag/></a>
+                <a className="nav-item" href="/#contact"><AiOutlineMail/></a>
+
             </div>
         </div>
         </>

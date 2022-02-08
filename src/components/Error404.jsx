@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom';
+
 const Error404 = () => {
     return (
-        <div>
-            <h2>Error 404. Not found</h2>
+        <div className="error-container">
+            <h2 className="error-message">No existe esta dirección :(</h2>
+            <Link className="back-error-btn" to="/">Regresar</Link>
         </div>
     )
 }

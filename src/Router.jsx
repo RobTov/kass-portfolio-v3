@@ -1,4 +1,4 @@
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Main , Error404 } from './components';
 
 const Router = () => {

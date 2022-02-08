@@ -12,7 +12,7 @@ const Projects = () => {
     const title3 = "Casa Ultramoderna";
 
     return (
-        <div className="projects">
+        <div className="projects" id={"projects"}>
             <h2 className="projects-title">Mis Proyectos</h2>
             <div className="projects-container">
                 <ProjectCard title={title1} img={project1} description={description1} />

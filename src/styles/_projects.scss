@@ -53,7 +53,27 @@
         justify-content: center;
         position: relative;
 
+        * {
+            transition: .01s ease-out;
+        }
+
     }
+
+    .card-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.3rem;
+
+        &:hover {
+            opacity: .7;
+        }
+    }   
+
+    .card-description {
+        &:hover {
+            opacity: .7;
+        }
+    }
+
 
     .right-side {
         opacity: .85;
@@ -67,6 +87,11 @@
         object-fit: cover;
         border-top-right-radius: .5rem;
         border-bottom-right-radius: .5rem;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            opacity: .7;
+        }
     }
 }
 
