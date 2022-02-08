@@ -2,4 +2,104 @@
 
 .projects {
     min-height: 100vh;
+    background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .projects-title {
+        color: base.$main-font-color;
+        font-size: 2rem;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: base.$main-font-color;
+}
+
+.project-card {
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border-radius: .5rem;
+    margin-bottom: 4rem;
+
+    transform-style: preserve-3d;
+    
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    .left-side, .right-side {
+        width: 50%;
+        height: 100%;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    .right-side {
+        opacity: .85;
+        z-index: -100;
+    }
+
+    .project-img {
+        z-index: -100;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+}
+
+.show-more-btn {
+    border: none;
+    position: absolute;
+    bottom: 25%;
+    background: transparent;
+    color: base.$main-font-color;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: .3rem 1rem;
+    opacity: .85;
+    align-self: flex-end;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    transition: .5s ease-in-out;
+
+    transform: translateZ(20rem);
+    &:hover {
+        background-color: rgb(240, 27, 141);
+        opacity: 1;
+        transform: translateZ(20rem);
+    }
+}
+
+.reversed {
+    flex-direction: row-reverse;
+    border-top-left-radius: .5;
+
+}
+
+.reversed-img {
+    border-top-left-radius: .5rem;
 }

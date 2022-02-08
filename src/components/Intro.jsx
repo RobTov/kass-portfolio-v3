@@ -12,7 +12,7 @@ const Intro = () => {
         <>
         <div className="intro">
             <div className="left-side">
-                <h1 className="intro-title">Kassandra Romanillo</h1>
+                <h1 className="intro-title text-gradient">Kassandra Romanillo</h1>
                 <div className="i-title">
                     <div className="i-title-wrapper">
                         <div className="i-title-item">Arquitecto</div>
@@ -26,7 +26,7 @@ const Intro = () => {
 
             <div className="r-side">
                 <div className="img-bg"></div>
-                <img src={Kass} alt="kass"/>
+                <img className="intro-img" src={Kass} alt="kass"/>
             </div>
 
         </div>

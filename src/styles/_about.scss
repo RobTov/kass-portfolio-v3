@@ -61,7 +61,7 @@
 
 .about-resources {
     align-self: flex-end;
-    justify-self: center;
+    margin-right: auto;
     margin-bottom: 2rem;
     color: base.$main-font-color;
 
@@ -75,5 +75,14 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
+
+        .res-icons {
+            color: base.$main-font-color;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: rgb(240, 27, 141);
+            }
+        }
     }
 }
