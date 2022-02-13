@@ -1,5 +1,4 @@
 import Kass from '../assets/images/kissu-guapa-removebg.png';
-import { Link } from 'react-router-dom';
 
 import { CgMouse } from 'react-icons/cg';
 import { AiOutlineHome } from 'react-icons/ai';

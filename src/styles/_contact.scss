@@ -2,4 +2,67 @@
 
 .contact {
     min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
+    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
+    
+    .contact-title {
+        margin-top: 3rem;
+        font-size: 1.8rem;
+        color: base.$main-font-color;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .media-contact-container {
+        display: flex;
+        flex-direction: column;
+        min-width: 40%;
+        // align-items: center;
+        gap: .8rem;
+
+        .media-link {
+            color: base.$main-font-color;
+            text-decoration: none;
+            opacity: .9;
+            transition: .3s ease-in;
+
+            &:hover {
+                color: #f01b8d;
+            }
+        }
+        
+    }
+
+    .form-container {
+        width: 40%;
+        color: base.$main-font-color;
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            input, textarea {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.form-error-message {
+    color: #f01b8d;
+    font-size: .8rem;
+    font-weight: bold;
 }

@@ -1,6 +1,7 @@
 import Tilt from 'react-tilt';
+import { Link } from 'react-router-dom';
 
-const ProjectCard = ({ img, title, description, reversed }) => {
+const ProjectCard = ({ id, img, title, description, reversed }) => {
     return (
         <Tilt 
         className={`project-card ${reversed && "reversed"}`}
@@ -18,7 +19,7 @@ const ProjectCard = ({ img, title, description, reversed }) => {
             <div className="left-side">
                 <h3 className="card-title">{title}</h3>
                 <p className="card-description">{description}</p>
-                    <button className="show-more-btn">Ver Más</button>
+                    <Link to={`/project/${title}`} className="show-more-btn">Ver Más</Link>
             </div>
             <div className="right-side">
                     <img className={`project-img ${reversed && "reversed-img"}`} src={img} alt={img}/>

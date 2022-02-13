@@ -101,10 +101,11 @@
     bottom: 25%;
     background: transparent;
     color: base.$main-font-color;
-    cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
     padding: .3rem 1rem;
+    text-decoration: none;
+    font-size: .9rem;
     opacity: .85;
     align-self: flex-end;
     margin-right: 2rem;

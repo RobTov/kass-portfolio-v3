@@ -15,9 +15,9 @@ const Projects = () => {
         <div className="projects" id={"projects"}>
             <h2 className="projects-title">Mis Proyectos</h2>
             <div className="projects-container">
-                <ProjectCard title={title1} img={project1} description={description1} />
-                <ProjectCard title={title2} img={project2} description={description1} reversed={true}/>
-                <ProjectCard title={title3} img={project3} description={description1} />
+                <ProjectCard id={1} title={title1} img={project1} description={description1} />
+                <ProjectCard id={2} title={title2} img={project2} description={description1} reversed={true}/>
+                <ProjectCard id={3} title={title3} img={project3} description={description1} />
             </div>
         </div>
     )

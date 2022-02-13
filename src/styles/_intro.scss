@@ -53,7 +53,7 @@
 .i-title-item {
     height: 50px;
     width: 30%;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #722741;
     // background-color: #722741;
     display: flex;
@@ -113,12 +113,14 @@
     margin-left: 9rem;
 
     border-bottom-left-radius: 30rem;
-    border-bottom-right-radius: 20rem;
+    border-bottom-right-radius: 30rem;
 }
 
 
 // nav bar
 .bottom-nav-bar {
+    // display: none;
+
     z-index: 100;
     margin-bottom: .8rem;
     position: fixed;

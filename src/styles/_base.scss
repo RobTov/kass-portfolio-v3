@@ -7,8 +7,6 @@ $main-font-color: #e1e2e2;
 $low-op-font-color: rgba(225, 226, 226, 0.6);
 $main-bg-color: #0f0e13;
 
-
-
 body {
     font-family: $main-font-family;
     overflow-x: hidden;
@@ -32,4 +30,9 @@ body {
 
 .intro, .contact, .about, .projects {
     scroll-behavior: smooth;
+}
+
+textarea {
+    resize: none;
+    font-family: inherit;
 }

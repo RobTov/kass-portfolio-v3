@@ -1,0 +1,17 @@
+@use 'base';
+
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .details-title {
+        color: base.$main-font-color;
+        font-size: 2.4rem;
+        align-self: start;
+        margin-top: 2rem;
+    }
+}
