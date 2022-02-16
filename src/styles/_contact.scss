@@ -47,6 +47,9 @@
     .form-container {
         width: 40%;
         color: base.$main-font-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .form {
             display: flex;
@@ -56,7 +59,39 @@
 
             input, textarea {
                 width: 100%;
+                border: none;
+                margin-bottom: .4rem;
+                background: rgba(255, 255, 255, 0.05);
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+                color: base.$main-font-color;
+                border-radius: .1rem;
+
+                &::placeholder {
+                    color: base.$placeholder-font-color;
+                }
+            } 
+
+            .submit-btn {
+                width: 30%;
+                padding: .3rem 1.4rem;
+                margin-top: .75rem;
+                border-radius: .75rem;
+                transition: .3s ease-in;
+                &:hover {
+                    cursor: pointer;
+                    background-color: transparent;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    opacity: .65;
+                }
             }
+        }
+
+        .form-success-message {
+            margin-top: 1.3rem;
+            color: #f01b8d;
+            color: base.$main-font-color;
+
         }
     }
 }

@@ -1,4 +1,5 @@
 import { useForm } from '../hooks/useForm';
+import Loader from './Loader';
 
 const initialForm = {
     name: "",
@@ -28,7 +29,8 @@ const validateForm = (form) => {
     if (!form.comment.trim()) {
         errors.comment = "el mensaje es requerido";
     } else if(!regexComment.test(form.comment.trim())) {
-        errors.email = "su mensaje debe tener menos de 100 caracteres";
+        // errors.comment = "su mensaje debe tener menos de 100 caracteres";
+
     }
 
     return errors;
@@ -66,8 +68,10 @@ const ContactForm = () => {
             required
             ></textarea>
             {error.comment && <p className="form-error-message">{error.comment}</p>}
-            <input type="submit" value="Enviar"/>
+            <input className="submit-btn" type="submit" value="Enviar"/>
         </form> 
+        {loading && <Loader />}
+        {response && <><p className="form-success-message">Su mensaje ha sido enviado</p></>}
         </>
     )
 }

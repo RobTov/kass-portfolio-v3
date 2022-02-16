@@ -10,10 +10,10 @@ const Contact = () => {
             <h2 className="contact-title">Contácteme</h2>
             <div className="contact-container">
                 <div className="media-contact-container">
-                    <Link className="media-link" to="https://gmail.com"><AiOutlineMail />  kissukass@gmail.com</Link>
-                    <Link className="media-link" to="https://gmail.com"><AiOutlineWhatsApp /></Link>
-                    <Link className="media-link" to=""><FiFacebook /></Link>
-                    <Link className="media-link" to=""><BsInstagram /></Link>
+                    <Link className="media-link" to="https://gmail.com" target="_blank" rel="noreferrer"><AiOutlineMail />  kissukass@gmail.com</Link>
+                    <Link className="media-link" to="https://gmail.com" target="_blank" rel="noreferrer"><AiOutlineWhatsApp /></Link>
+                    <Link className="media-link" to="" target="_blank" rel="noreferrer"><FiFacebook /></Link>
+                    <Link className="media-link" to="" target="_blank" rel="noreferrer"><BsInstagram /></Link>
                     
                 </div>
                 <div className="form-container">
