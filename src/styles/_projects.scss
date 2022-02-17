@@ -114,7 +114,7 @@
 
     transform: translateZ(20rem);
     &:hover {
-        background-color: rgb(240, 27, 141);
+        background-color: base.$alt-color;
         opacity: 1;
         transform: translateZ(20rem);
     }

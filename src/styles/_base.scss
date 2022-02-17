@@ -7,6 +7,7 @@ $main-font-color: #e1e2e2;
 $placeholder-font-color: #e1e2e2a4;
 $low-op-font-color: rgba(225, 226, 226, 0.6);
 $main-bg-color: #0f0e13;
+$alt-color: #f01b8d;
 
 body {
     font-family: $main-font-family;
@@ -19,6 +20,7 @@ body {
     background-color: #fff;
     background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -26,6 +28,7 @@ body {
     background: rgb(15,14,19);
     background: linear-gradient(90deg, rgba(15,14,19,1) 0%, rgba(105,105,108,1) 2%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

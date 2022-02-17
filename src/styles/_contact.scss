@@ -38,7 +38,7 @@
             transition: .3s ease-in;
 
             &:hover {
-                color: #f01b8d;
+                color: base.$alt-color;
             }
         }
         
@@ -89,7 +89,7 @@
 
         .form-success-message {
             margin-top: 1.3rem;
-            color: #f01b8d;
+            color: base.$alt-color;
             color: base.$main-font-color;
 
         }
@@ -97,7 +97,7 @@
 }
 
 .form-error-message {
-    color: #f01b8d;
+    color: base.$alt-color;
     font-size: .8rem;
     font-weight: bold;
 }

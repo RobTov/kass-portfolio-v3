@@ -81,7 +81,7 @@
             transition: .3s ease-in-out;
 
             &:hover {
-                color: rgb(240, 27, 141);
+                color: base.$alt-color;
             }
         }
     }

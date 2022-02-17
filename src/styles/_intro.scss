@@ -156,5 +156,12 @@
             transform: scale(1.05);
         }
     }
+
+    .active-item {
+        color: base.$alt-color;
+    }
 }
 
+.hidden-nav {
+    visibility: hidden;
+}

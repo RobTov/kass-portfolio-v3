@@ -1,4 +1,5 @@
 import Kass from '../assets/images/kissu-guapa-removebg.png';
+import { useState, useEffect } from 'react';
 
 import { CgMouse } from 'react-icons/cg';
 import { AiOutlineHome } from 'react-icons/ai';
@@ -7,6 +8,16 @@ import { BiShoppingBag } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Intro = () => {
+    const [contact, setContact] = useState(JSON.parse(localStorage.getItem('contact')));
+
+    useEffect(() => {
+        window.addEventListener('storage', () => {
+            setContact(JSON.parse(localStorage.getItem('contact') || false));
+            console.log(contact)
+        });
+    }, [])
+
+
     return (
         <>
         <div className="intro" id="home">
@@ -29,13 +40,12 @@ const Intro = () => {
             </div>
 
         </div>
-        <div className="bottom-nav-bar">
+        <div className={`bottom-nav-bar ${contact && "hidden-nav"}`}>
             <div className="nav-bar-container">
                 <a className="nav-item" href="/#home"><AiOutlineHome /></a>
                 <a className="nav-item" href="/#about"><MdPersonOutline/></a>
                 <a className="nav-item" href="/#projects"><BiShoppingBag/></a>
-                <a className="nav-item" href="/#contact"><AiOutlineMail/></a>
-
+                <a className={`nav-item`} href="/#contact"><AiOutlineMail/></a>
             </div>
         </div>
         </>
