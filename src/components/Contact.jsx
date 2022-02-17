@@ -1,22 +1,24 @@
+import { useContext } from 'react';
 import { AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai';
 import { FiFacebook } from 'react-icons/fi';
 import { BsInstagram } from 'react-icons/bs';
+import { AiOutlineArrowUp } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+
 import ContactForm from './ContactForm';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import IntersectionContext from '../context/IntersectionContext';
 
 const Contact = () => {
     const [ containerRef, isVisible ] = useIntersectionObserver({
         root: null, 
         rootMargin: "0px",
-        threshold: 0.5
+        threshold: 0.1
     })
 
-    if (isVisible) {
-        localStorage.setItem('contact', true);
-    } else {
-        localStorage.setItem('contact', false);
-    }
+    const {setObservedItem} = useContext(IntersectionContext);
+
+    if (isVisible) setObservedItem('contact');
 
     return (
         <div className="contact" id="contact" ref={containerRef}>
@@ -33,6 +35,7 @@ const Contact = () => {
                     <ContactForm />
                 </div>
             </div>
+            <a href="#home"><AiOutlineArrowUp className="arrow-up" /></a>
         </div>
     )
 }

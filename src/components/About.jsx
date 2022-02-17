@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+
 import { CgSoftwareDownload } from 'react-icons/cg';
 import { SiAutodesk } from 'react-icons/si';
 import { SiAdobephotoshop } from 'react-icons/si';
@@ -7,9 +9,19 @@ import revit from '../assets/images/revit-icon.png';
 
 import { Link } from 'react-router-dom';
 
+import IntersectionContext from '../context/IntersectionContext';
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+
 const About = () => {
+    const [ containerRef, isVisible ] = useIntersectionObserver({
+        threshold: 0.5
+    });
+    const { observedItem, setObservedItem } = useContext(IntersectionContext);
+    
+    if (isVisible) setObservedItem('about');
+
     return (
-        <div className="about" id="about">
+        <div className="about" id="about" ref={containerRef}>
 
             <div className="about-header-cont">
                 <h2 className="about-header">Hola! Soy Kassandra Romanillo🥰, <br />arquitecto, diseñadora <br />y decoradora de interiores.  🏘️</h2>

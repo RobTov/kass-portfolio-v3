@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     background-image: 
     radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
@@ -100,4 +101,19 @@
     color: base.$alt-color;
     font-size: .8rem;
     font-weight: bold;
+}
+
+.arrow-up {
+    color: base.$main-font-color;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    font-size: 1.3rem;
+    transition: .4s ease-in;
+
+    &:hover {
+        color: base.$alt-color;
+        opacity: .7;
+        transform: rotate(360deg);
+    }
 }

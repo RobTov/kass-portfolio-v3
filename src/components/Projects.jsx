@@ -1,9 +1,23 @@
+import { useContext } from "react";
 import ProjectCard from './ProjectCard';
 import project1 from '../assets/images/projects/test4.jpg';
 import project2 from '../assets/images/projects/test5.jpg';
 import project3 from '../assets/images/projects/test6.jpg';
 
+import IntersectionContext from '../context/IntersectionContext';
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+
 const Projects = () => {
+    const [ containerRef, isVisible ] = useIntersectionObserver({
+        threshold: .5
+    });
+    const { setObservedItem } = useContext(IntersectionContext);
+    
+    if (isVisible) {
+        console.log("Projects visible")
+        setObservedItem('prj')
+    };
+
     const title1 = "Casa Moderna";
     const description1 = "Lorem ipsum dolor sit amet et delir";
 
@@ -17,7 +31,7 @@ const Projects = () => {
             <div className="projects-container">
                 <ProjectCard id={1} title={title1} img={project1} description={description1} />
                 <ProjectCard id={2} title={title2} img={project2} description={description1} reversed={true}/>
-                <ProjectCard id={3} title={title3} img={project3} description={description1} />
+                <ProjectCard id={3} title={title3} img={project3} description={description1} ref={containerRef} />
             </div>
         </div>
     )
