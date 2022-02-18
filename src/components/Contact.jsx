@@ -13,7 +13,7 @@ const Contact = () => {
     const [ containerRef, isVisible ] = useIntersectionObserver({
         root: null, 
         rootMargin: "0px",
-        threshold: 0.1
+        threshold: .5
     })
 
     const {setObservedItem} = useContext(IntersectionContext);
@@ -35,7 +35,7 @@ const Contact = () => {
                     <ContactForm />
                 </div>
             </div>
-            <a href="#home"><AiOutlineArrowUp className="arrow-up" /></a>
+            <a href="#home"><AiOutlineArrowUp className="arrow-up"/></a>
         </div>
     )
 }

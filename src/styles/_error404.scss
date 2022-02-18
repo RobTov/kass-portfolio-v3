@@ -15,7 +15,7 @@
     .back-error-btn {
         text-decoration: none;
         color: base.$main-font-color;
-        background-color: rgb(218, 39, 134);
+        background-color: base.$alt-color;
         padding: .5rem 1rem;
         border-radius: .5rem;
         transition: .3s ease-out;

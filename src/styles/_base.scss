@@ -8,6 +8,9 @@ $placeholder-font-color: #e1e2e2a4;
 $low-op-font-color: rgba(225, 226, 226, 0.6);
 $main-bg-color: #0f0e13;
 $alt-color: #f01b8d;
+$mobile-width: 480px;
+$tablet-width: 767px;
+$huge-screens: 1300px;
 
 body {
     font-family: $main-font-family;

@@ -2,6 +2,7 @@
 
 .project-detail {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
@@ -10,8 +11,45 @@
 
     .details-title {
         color: base.$main-font-color;
+        margin-bottom: 3rem;
         font-size: 2.4rem;
         align-self: start;
         margin-top: 2rem;
+        align-self: center;
     }
+
+    .img-grid-container {
+        margin-top: 1rem;
+        display: grid;
+        width: 70%;
+        height: 200px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+
+        .img-cont {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.details-back-btn {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    text-decoration: none;
+    color: base.$main-font-color;
+    background-color: base.$alt-color;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    transition: .3s ease-out;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.spacer {
+    min-height: 20vh;
 }

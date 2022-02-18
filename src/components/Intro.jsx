@@ -1,5 +1,5 @@
 import Kass from '../assets/images/kissu-guapa-removebg.png';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 import { CgMouse } from 'react-icons/cg';
 import { AiOutlineHome } from 'react-icons/ai';
@@ -15,7 +15,9 @@ const Intro = () => {
     });
     const { observedItem, setObservedItem } = useContext(IntersectionContext);
     
-    if (isVisible) setObservedItem('intro');
+    useEffect(() => {
+        if (isVisible) setObservedItem('intro');
+    }, [observedItem, isVisible])
 
     return (
         <>
@@ -43,7 +45,7 @@ const Intro = () => {
             <div className="nav-bar-container">
                 <a className={`nav-item ${observedItem === 'intro' && "active-item" }`} href="/#home"><AiOutlineHome /></a>
                 <a className={`nav-item ${observedItem === 'about' && "active-item" }`} href="/#about"><MdPersonOutline/></a>
-                <a className={`nav-item ${observedItem === 'prj' && "active-item" }`} href="/#projects"><BiShoppingBag/></a>
+                <a className={`nav-item ${observedItem === 'projects' && "active-item" }`} href="/#projects"><BiShoppingBag/></a>
                 <a className="nav-item" href="/#contact"><AiOutlineMail/></a>
             </div>
         </div>
