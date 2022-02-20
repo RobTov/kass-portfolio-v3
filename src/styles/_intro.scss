@@ -163,7 +163,7 @@
     .intro {
         flex-direction: column-reverse;
         min-height: 50vh;
-        width: 100%;
+        width: auto;
     }
     .left-side {
         margin-top: 2rem;
@@ -193,7 +193,8 @@
     }
 
     .bottom-nav-bar {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        bottom: 40%;
         width: 70%;
         position: fixed;
         left: 15%;
