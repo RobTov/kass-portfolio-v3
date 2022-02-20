@@ -11,13 +11,15 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const Intro = () => {
     const [ containerRef, isVisible ] = useIntersectionObserver({
-        threshold: 0.5
+        threshold: 1
     });
     const { observedItem, setObservedItem } = useContext(IntersectionContext);
     
     useEffect(() => {
         if (isVisible) setObservedItem('intro');
-    }, [observedItem, isVisible])
+    }, [observedItem, isVisible]);
+
+    let mobileScreen = window.screen.width < 480;
 
     return (
         <>
