@@ -61,7 +61,6 @@
 
 .about-resources {
     align-self: flex-end;
-    margin-right: auto;
     margin-bottom: 2rem;
     justify-self: center;
     color: base.$main-font-color;
@@ -80,6 +79,7 @@
         .res-icons {
             color: base.$main-font-color;
             transition: .3s ease-in-out;
+            margin-right: .8rem;
 
             &:hover {
                 color: base.$alt-color;
@@ -120,16 +120,17 @@
     }
 
     .about-resources {
+        position: static !important;
         align-self: center;
         justify-self: center;
-        margin-left: auto;
+        margin-left: -2% !important;
     }
 }
 
 @media screen and (max-width: base.$tablet-width) {
     .about {
         margin-top: 4rem;
-        min-height: 70vh;
+        min-height: 80vh;
     }
 
     .about-brief-text {
@@ -140,7 +141,8 @@
 
     .about-resources {
         position: absolute;
-        left: 33%;
-        margin-bottom: 5rem;
+        bottom: -7%;
+        left: 33% !important;
+        margin-bottom: 0rem;
     }
 }

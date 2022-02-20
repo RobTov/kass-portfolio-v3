@@ -55,6 +55,7 @@
 
         * {
             transition: .01s ease-out;
+            margin-left: 1rem;
         }
 
     }
@@ -167,6 +168,10 @@
 }
 
 @media screen and (max-width: base.$tablet-width) {
+    .projects-title {
+        margin-top: 5rem;
+    }
+
     .left-side * {
         margin-left: 1rem;
         transform: scale(.95);

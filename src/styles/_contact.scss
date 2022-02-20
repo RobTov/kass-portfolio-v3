@@ -1,7 +1,7 @@
 @use 'base';
 
 .contact {
-    min-height: auto;
+    min-height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@
                 &:hover {
                     cursor: pointer;
                     background-color: transparent;
-                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border: 1px solid #ffffff33;
                     opacity: .65;
                 }
             }
@@ -126,9 +126,11 @@ screen and (max-width: base.$tablet-width) {
     }
 
     .contact-container {
+        margin-top: 0 !important;
         flex-direction: column-reverse;
         width: 100%;
         align-items: center;
+        height: 80vh;
     }
 
     .form {

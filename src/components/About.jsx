@@ -5,6 +5,12 @@ import { SiAutodesk } from 'react-icons/si';
 import { SiAdobephotoshop } from 'react-icons/si';
 import { SiAdobeillustrator } from 'react-icons/si';
 import { SiAdobexd } from 'react-icons/si';
+import { SiAdobeindesign } from 'react-icons/si';
+import { SiMicrosoftoffice } from 'react-icons/si';
+import { SiSketchup } from 'react-icons/si';
+import { SiHtml5 } from 'react-icons/si';
+import { SiCss3 } from 'react-icons/si';
+
 import revit from '../assets/images/revit-icon.png';
 
 import { Link } from 'react-router-dom';
@@ -25,14 +31,15 @@ const About = () => {
 
             <div className="about-header-cont">
                 <h2 className="about-header">Hola! Soy Kassandra Romanillo🥰, <br />arquitecto, diseñadora <br />y decoradora de interiores.🏘️</h2>
-                <a className="cv-dwn-button" href="src/assets/images/kissu-guapa.jpg" rel="noreferrer" target="_blank">Descargar CV <CgSoftwareDownload className="dwn-icon" /></a>
+                <a className="cv-dwn-button" href="src/assets/Curriculum_Kassandra.pdf" rel="noreferrer" target="_blank">Descargar CV <CgSoftwareDownload className="dwn-icon" /></a>
             </div>
 
             <div className="about-brief-text">
                 <p>
                 Graduada de Arquitectura de la UABC. <br />
-                Cuento con más de 3 años de experiencia.
-                <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Sed repellendus dicta corporis eligendi, blanditiis nam laboriosam animi fuga dolor fugit ullam iure perspiciatis ducimus nobis?
+                Trilingue y con más de 6 años de experiencia.
+                <br /> Proactiva, dinámica y con visión innovadora. <br /> 
+                Buena presentación y eficacia garantizadas.
                 </p>
             </div>
 
@@ -46,6 +53,11 @@ const About = () => {
                     <Link className="res-icons" to=""><SiAdobephotoshop /></Link>
                     <Link className="res-icons" to=""><SiAdobeillustrator /></Link>
                     <Link className="res-icons" to=""><SiAdobexd /></Link>
+                    <Link className="res-icons" to=""><SiAdobeindesign /></Link>
+                    <Link className="res-icons" to=""><SiMicrosoftoffice /></Link>
+                    <Link className="res-icons" to=""><SiSketchup /></Link>
+                    <Link className="res-icons" to=""><SiHtml5 /></Link>
+                    <Link className="res-icons" to=""><SiCss3 /></Link>
                     
                     {/* <img src={revit} alt=""/> */}
 
