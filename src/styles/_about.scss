@@ -87,3 +87,41 @@
         }
     }
 }
+
+@media screen and (max-width: base.$mobile-width) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-header-cont {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-header {
+        font-size: 30rem;
+    }
+
+    .cv-dwn-button {
+        margin-top: -1rem;
+        font-size: 1rem !important;
+        padding: .5rem .7rem !important;
+        align-self: flex-start;
+    }
+
+    .about-brief-text {
+       position: static;
+       margin-left: 2rem;
+       margin-bottom: 2rem;
+       font-size: 1.2rem;
+    }
+
+    .about-resources {
+        align-self: center;
+        justify-self: center;
+        margin-left: auto;
+    }
+}

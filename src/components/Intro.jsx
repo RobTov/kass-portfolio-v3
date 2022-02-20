@@ -33,8 +33,7 @@ const Intro = () => {
                 </div>
             </div>
             <CgMouse className="mouse-scroll"/>
-
-
+            
             <div className="r-side">
                 <div className="img-bg"></div>
                 <img className="intro-img" src={Kass} alt="kass"/>

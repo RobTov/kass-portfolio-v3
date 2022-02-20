@@ -161,9 +161,38 @@
 
 @media screen and (max-width: base.$mobile-width) {
     .intro {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        min-height: auto;
     }
     .left-side {
-        margin-top: 1rem;
+        margin-top: 2rem;
+
+        .intro-title {
+            font-size: 2.8rem;
+            text-align: left;
+        }
+
+        .i-title {
+            margin-top: 3rem;
+        }
+
+        .i-title-item {
+            font-size: 2rem;
+        }
+    }
+
+    .r-side {
+        display: none;
+    }   
+
+    .mouse-scroll {
+        left: 75%;
+    }
+
+    .bottom-nav-bar {
+        margin-bottom: 1rem;
+        width: 70%;
+        position: fixed;
+        left: 15%;
     }
 }

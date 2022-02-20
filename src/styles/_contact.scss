@@ -1,7 +1,7 @@
 @use 'base';
 
 .contact {
-    min-height: 100vh;
+    min-height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -115,5 +115,41 @@
         color: base.$alt-color;
         opacity: .7;
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: base.$mobile-width) {
+    .contact-container {
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form {
+        width: 200%;
+
+        input {
+            height: 1.3rem;
+        }
+
+        .submit-btn {
+            height: 2rem;
+            margin-top: .18rem !important;
+            width: 40% !important;
+        }
+
+    }
+
+    .media-contact-container {
+        width: 100%;
+        flex-direction: row-reverse !important;
+        margin-left: 2rem;
+        gap: 0rem;
+
+        .media-link:first-child {
+            width: 100% !important;
+        }
+
+        
     }
 }

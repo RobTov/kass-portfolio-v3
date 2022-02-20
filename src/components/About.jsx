@@ -24,7 +24,7 @@ const About = () => {
         <div className="about" id="about" ref={containerRef}>
 
             <div className="about-header-cont">
-                <h2 className="about-header">Hola! Soy Kassandra Romanillo🥰, <br />arquitecto, diseñadora <br />y decoradora de interiores.  🏘️</h2>
+                <h2 className="about-header">Hola! Soy Kassandra Romanillo🥰, <br />arquitecto, diseñadora <br />y decoradora de interiores.🏘️</h2>
                 <a className="cv-dwn-button" href="src/assets/images/kissu-guapa.jpg" rel="noreferrer" target="_blank">Descargar CV <CgSoftwareDownload className="dwn-icon" /></a>
             </div>
 
