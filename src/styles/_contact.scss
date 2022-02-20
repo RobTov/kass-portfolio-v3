@@ -119,6 +119,11 @@
 }
 
 @media screen and (max-width: base.$mobile-width) {
+    .contact {
+        min-height: 70vh;
+        position: relative;
+    }
+
     .contact-container {
         flex-direction: column-reverse;
         width: 100%;
@@ -141,9 +146,12 @@
     }
 
     .media-contact-container {
+        position: absolute;
+        bottom: 2%;
+        // margin-left: 2rem;
+        left: 10%;
         width: 100%;
         flex-direction: row-reverse !important;
-        margin-left: 2rem;
         gap: 0rem;
 
         .media-link:first-child {
