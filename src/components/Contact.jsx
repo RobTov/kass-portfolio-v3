@@ -13,7 +13,7 @@ const Contact = () => {
     const [ containerRef, isVisible ] = useIntersectionObserver({
         root: null, 
         rootMargin: "0px",
-        threshold: .6
+        threshold: .1
     })
 
     const {setObservedItem} = useContext(IntersectionContext);
