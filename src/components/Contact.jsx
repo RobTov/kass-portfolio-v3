@@ -12,8 +12,7 @@ import IntersectionContext from '../context/IntersectionContext';
 const Contact = () => {
     const [ containerRef, isVisible ] = useIntersectionObserver({
         root: null, 
-        rootMargin: "0px",
-        threshold: .6
+        threshold: .5
     })
 
     const {setObservedItem} = useContext(IntersectionContext);

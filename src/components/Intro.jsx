@@ -11,7 +11,7 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const Intro = () => {
     const [ containerRef, isVisible ] = useIntersectionObserver({
-        threshold: 1
+        threshold: .5
     });
     const { observedItem, setObservedItem } = useContext(IntersectionContext);
     

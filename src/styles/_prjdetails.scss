@@ -40,7 +40,8 @@
     left: 1%;
     text-decoration: none;
     color: base.$main-font-color;
-    background-color: base.$alt-color;
+    background: #27335966;
+    backdrop-filter: blur(5px); 
     padding: .5rem 1rem;
     border-radius: .5rem;
     transition: .3s ease-out;
@@ -52,4 +53,33 @@
 
 .spacer {
     min-height: 20vh;
+}
+
+@media screen and (max-width: base.$mobile-width) {
+    .project-detail {
+        height: auto;
+    }
+
+    .details-title {
+        font-size: 2.1rem !important;
+        margin-top: 5rem !important;
+    }
+
+    .details-main-img {
+        width: 90%;
+    }
+
+    .img-grid-container {
+        width: 90% !important;
+    }
+
+    .img-cont {
+        height: auto;
+    }
+
+    .details-back-btn {
+        top: 2%;
+        left: 3%;
+        padding: .4rem .8rem !important;
+    }
 }

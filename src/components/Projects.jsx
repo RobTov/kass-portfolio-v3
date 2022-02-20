@@ -9,7 +9,7 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const Projects = () => {
     const [ containerRef, isVisible ] = useIntersectionObserver({
-        threshold: .3
+        threshold: .5
     });
     const { observedItem, setObservedItem } = useContext(IntersectionContext);
 
