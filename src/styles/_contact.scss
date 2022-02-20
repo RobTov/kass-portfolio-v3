@@ -118,7 +118,8 @@
     }
 }
 
-@media screen and (max-width: base.$mobile-width) {
+@media screen and (max-width: base.$mobile-width),
+screen and (max-width: base.$tablet-width) {
     .contact {
         min-height: 70vh;
         position: relative;
@@ -148,7 +149,6 @@
     .media-contact-container {
         position: absolute;
         bottom: 2%;
-        // margin-left: 2rem;
         left: 10%;
         width: 100%;
         flex-direction: row-reverse !important;
@@ -158,6 +158,14 @@
             width: 100% !important;
         }
 
-        
+        .media-link {
+            margin-right: .3rem;
+        }
+    }
+}
+
+@media screen and (max-width: base.$tablet-width) {
+    .contact {
+        min-height: 50vh;
     }
 }

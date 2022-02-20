@@ -24,7 +24,7 @@ const Intro = () => {
     return (
         <>
         <div className="intro" id="home" ref={containerRef}>
-            <div className="left-side">
+            <div className="l-side">
                 <h1 className="intro-title text-gradient">Kassandra Romanillo</h1>
                 <div className="i-title">
                     <div className="i-title-wrapper">

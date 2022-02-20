@@ -125,3 +125,22 @@
         margin-left: auto;
     }
 }
+
+@media screen and (max-width: base.$tablet-width) {
+    .about {
+        margin-top: 4rem;
+        min-height: 70vh;
+    }
+
+    .about-brief-text {
+        font-size: 1.17rem;
+        top: 32%;
+        left: 40%;
+    }
+
+    .about-resources {
+        position: absolute;
+        left: 33%;
+        margin-bottom: 5rem;
+    }
+}

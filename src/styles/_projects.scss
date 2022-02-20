@@ -165,3 +165,10 @@
         }
     }
 }
+
+@media screen and (max-width: base.$tablet-width) {
+    .left-side * {
+        margin-left: 1rem;
+        transform: scale(.95);
+    }
+}
